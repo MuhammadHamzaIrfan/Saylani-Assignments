@@ -37,9 +37,10 @@ nav{
     font-family: var(--primaryfont);
     font-weight: 700;
     list-style-type: none;
-    margin-left: 570px;
+    /* margin-left: 580px; */
+    float: right;
     word-spacing: 70px;
-    margin-top: 5px;
+    margin-top: 0px;
 }
 
 .pages > li{
