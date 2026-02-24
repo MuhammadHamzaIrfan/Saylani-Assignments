@@ -1,77 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Positivus</title>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./style.css">
 </head>
-    
-    <body>
 
-        <input type="checkbox" id="menu-toggle" aria-hidden="true">
+<body>
+    <header>
+        <nav>
 
-        <header>
-            <nav>
-                <!-- Logo -->
-                <a class="logo" href="#">
-                    <img src="./Images/Logo.png" alt="Positivus logo" class="logo-img">
-                    <span class="logo-text">Positivus</span>
-                </a>
+            <a class="logo" href="#">
+                <img src="./Images/Logo.png" alt="Positivus logo" class="logo-img">
+                <h1 class="logo-text">Positivus</h1>
+            </a>
 
-                <!-- Desktop links -->
-                <ul class="nav-links">
-                    <li><a href="#">About Us</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Use Cases</a></li>
-                    <li><a href="#">Pricing</a></li>
-                    <li><a href="#">Blog</a></li>
-                </ul>
+            <input type="checkbox" id="menu-toggle" aria-hidden="true">
+            <label class="hamburger" for="menu-toggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
 
+            <ul class="nav-links">
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Use Cases</a></li>
+                <li><a href="#">Pricing</a></li>
+                <li><a href="#">Blog</a></li>
                 <button class="nav-btn">Request a quote</button>
+            </ul>
 
-                <label class="hamburger" for="menu-toggle" aria-label="Toggle menu">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </label>
-            </nav>
-
-            <div class="nav-drawer">
-                <ul>
-                    <li><a href="#">About Us</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Use Cases</a></li>
-                    <li><a href="#">Pricing</a></li>
-                    <li><a href="#">Blog</a></li>
-                </ul>
-                <a href="#" class="drawer-btn">Request a quote</a>
-            </div>
-        </header>
-
-        <section class="hero">
-            <div>
-                <h2 class="hero-heading">Navigating the <br> digital landscape <br> for success</h2>
-                <p class="hero-paragraph">Our digital marketing agency helps businesses <br> grow and succeed online
-                    through a range of <br> services including SEO, PPC, social media marketing, <br> and content
-                    creation.</p>
-                <button class="hero-btn">Book a consultation</button>
-            </div>
-
-            <div class="hero-image">
-                <img src="./Images/hero-image.png" alt="">
-            </div>
-        </section>
-
-        <section class="Company-logo">
-            <img src="./Images/CompanyLogo-1.png" alt="">
-            <img src="./Images/CompanyLogo-2.png" alt="">
-            <img src="./Images/CompanyLogo-3.png" alt="">
-            <img src="./Images/CompanyLogo-4.png" alt="">
-            <img src="./Images/CompanyLogo-5.png" alt="">
-            <img src="./Images/CompanyLogo-6.png" alt="">
-        </section>
-
-    </body>
-    </html>
+        </nav>
+    </header>
+</body>
+</html>
