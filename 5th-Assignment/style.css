@@ -12,7 +12,6 @@ body {
     font-family: 'Space Grotesk', sans-serif;
 }
 
-/* ── HAMBURGER TOGGLE (hidden checkbox) ── */
 #menu-toggle {
     display: none;
 }
@@ -28,12 +27,12 @@ header {
 nav {
     display: flex;
     align-items: center;
+    justify-content: space-between;
     padding: 14px 40px;
     max-width: 1280px;
     margin: 0 auto;
 }
 
-/* ── LOGO ── */
 .logo {
     display: flex;
     align-items: center;
@@ -54,13 +53,11 @@ nav {
     letter-spacing: -0.5px;
 }
 
-/* ── NAV LINKS ── */
 .nav-links {
     list-style: none;
     display: flex;
     align-items: center;
     gap: 36px;
-    margin-left: 330px;
 }
 
 .nav-links li a {
@@ -93,7 +90,6 @@ nav {
     width: 100%;
 }
 
-/* ── CTA BUTTON ── */
 .nav-btn {
     padding: 12px 24px;
     background: #fff;
@@ -105,7 +101,6 @@ nav {
     font-size: 15px;
     font-weight: 500;
     white-space: nowrap;
-    margin-left: 50px;
     transition: background 0.2s, color 0.2s;
 }
 
@@ -114,7 +109,6 @@ nav {
     color: #B9FF66;
 }
 
-/* ── HAMBURGER BUTTON (label) ── */
 .hamburger {
     display: none;
     flex-direction: column;
@@ -135,7 +129,6 @@ nav {
     transform-origin: center;
 }
 
-/* Animate hamburger → X when checked */
 #menu-toggle:checked~header .hamburger span:nth-child(1) {
     transform: translateY(7.5px) rotate(45deg);
 }
@@ -148,15 +141,9 @@ nav {
     transform: translateY(-7.5px) rotate(-45deg);
 }
 
-/* ── MOBILE DRAWER ── */
 .nav-drawer {
     display: none;
-    /* hidden on desktop */
 }
-
-/* ────────────────────────────────
-           RESPONSIVE BREAKPOINTS
-        ──────────────────────────────── */
 
 /* Large tablet (900px–1024px): compress gaps a little */
 @media (max-width: 1024px) and (min-width: 901px) {
@@ -181,7 +168,6 @@ nav {
 /* iPad & Mobile (≤ 900px): hamburger drawer */
 @media (max-width: 900px) {
 
-    /* Show hamburger, hide inline links & button */
     .hamburger {
         display: flex;
     }
@@ -194,7 +180,6 @@ nav {
         display: none;
     }
 
-    /* Drawer panel */
     .nav-drawer {
         display: block;
         max-height: 0;
@@ -203,8 +188,6 @@ nav {
         transition: max-height 0.4s cubic-bezier(0.4, 0, 0.2, 1);
     }
 
-    /* Open state via sibling combinator trick:
-               checkbox lives just before <header> */
     #menu-toggle:checked+header .nav-drawer {
         max-height: 500px;
     }
@@ -297,7 +280,7 @@ nav {
     margin-left: 70px;
 }
 
-.hero-image > img {
+.hero-image>img {
     width: 550px;
     height: 450px;
     margin-left: 70px;
@@ -313,7 +296,7 @@ nav {
 
 }
 
-.Company-logo > img {
+.Company-logo>img {
     width: 120px;
     height: 50px;
 }
