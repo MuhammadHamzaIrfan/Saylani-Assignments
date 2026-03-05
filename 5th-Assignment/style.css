@@ -15,11 +15,6 @@ body {
     font-family: 'Space Grotesk', sans-serif;
 }
 
-img {
-    max-width: 100%;
-    height: auto;
-}
-
 /* ══════════════════════════════════════════════
    ─── ANIMATIONS ───
 ══════════════════════════════════════════════ */
@@ -135,7 +130,7 @@ nav {
     gap: 36px;
 }
 
-.nav-links>li>a {
+.nav-links > li > a {
     text-decoration: none;
     color: #191A23;
     font-size: 17px;
@@ -145,7 +140,7 @@ nav {
     transition: color 0.2s;
 }
 
-.nav-links>li>a::after {
+.nav-links > li > a::after {
     content: '';
     position: absolute;
     bottom: 0;
@@ -157,11 +152,11 @@ nav {
     transition: width 0.25s ease;
 }
 
-.nav-links>li>a:hover {
+.nav-links > li > a:hover {
     color: #000;
 }
 
-.nav-links>li>a:hover::after {
+.nav-links > li > a:hover::after {
     width: 100%;
 }
 
@@ -197,7 +192,7 @@ nav {
     z-index: 100;
 }
 
-.hamburger>span {
+.hamburger > span {
     display: block;
     width: 100%;
     height: 2.5px;
@@ -213,7 +208,7 @@ nav {
     margin-top: 50px;
 }
 
-.hero>div {
+.hero > div {
     animation: fadeInLeft 0.8s ease 0.2s both;
 }
 
@@ -256,10 +251,10 @@ nav {
     box-shadow: 0 8px 24px rgba(25, 26, 35, 0.35);
 }
 
-.hero-image>img {
-    width: 88%;
-    height: 83%;
-    margin-left: 70px;
+.hero-image > img {
+    width: 80%;
+    height: 85%;
+    margin-left: 110px;
 }
 
 /* ══════════════════════════════════════════════
@@ -285,13 +280,13 @@ nav {
     animation: fadeInUp 0.7s ease both;
 }
 
-.service>h2 {
+.service > h2 {
     margin-top: 100px;
     background-color: #B9FF66;
     font-size: 36px;
 }
 
-.service>p {
+.service > p {
     margin-left: 50px;
     margin-top: 100px;
     font-size: 18px;
@@ -332,7 +327,7 @@ nav {
     border-bottom-color: #000000;
 }
 
-.card>h3 {
+.card > h3 {
     font-size: 24px;
     font-weight: 700;
     margin-bottom: 20px;
@@ -340,7 +335,7 @@ nav {
     width: fit-content;
 }
 
-.card>a {
+.card > a {
     display: inline-block;
     margin-top: 65px;
     margin-left: 43px;
@@ -350,7 +345,7 @@ nav {
     transition: letter-spacing 0.2s ease;
 }
 
-.card>a:hover {
+.card > a:hover {
     letter-spacing: 1px;
 }
 
@@ -394,26 +389,26 @@ nav {
     background-color: #191A23;
 }
 
-.card-1>a,
-.card-2>a,
-.card-4>a,
-.card-5>a {
+.card-1 > a,
+.card-2 > a,
+.card-4 > a,
+.card-5 > a {
     color: black;
 }
 
-.card-3>a,
-.card-6>a {
+.card-3 > a,
+.card-6 > a {
     color: white;
 }
 
-.card-2>h3,
-.card-3>h3,
-.card-5>h3 {
+.card-2 > h3,
+.card-3 > h3,
+.card-5 > h3 {
     background-color: white;
 }
 
-.card-4>h3,
-.card-6>h3 {
+.card-4 > h3,
+.card-6 > h3 {
     background-color: #B9FF66;
 }
 
@@ -447,7 +442,7 @@ nav {
     max-width: 420px;
 }
 
-.cta-content h3 {
+.cta-content > h3 {
     font-size: 1.75rem;
     font-weight: 700;
     color: #111;
@@ -455,7 +450,7 @@ nav {
     line-height: 1.2;
 }
 
-.cta-content p {
+.cta-content > p {
     font-size: 0.95rem;
     color: #555;
     line-height: 1.6;
@@ -494,7 +489,7 @@ nav {
     position: relative;
 }
 
-.cta-img>img {
+.cta-img > img {
     max-width: unset;
 }
 
@@ -508,13 +503,13 @@ nav {
     animation: fadeInUp 0.7s ease both;
 }
 
-.Case-Studies>h2 {
+.Case-Studies > h2 {
     margin-top: 30px;
     background-color: #B9FF66;
     font-size: 36px;
 }
 
-.Case-Studies>p {
+.Case-Studies > p {
     margin-left: 40px;
     margin-top: 30px;
     font-size: 18px;
@@ -544,18 +539,18 @@ nav {
     text-align: left;
 }
 
-.studies>p {
+.studies > p {
     margin-bottom: 30px;
 }
 
-.studies>a {
+.studies > a {
     text-decoration: none;
     color: #B9FF66;
     font-weight: 500;
     transition: letter-spacing 0.2s ease;
 }
 
-.studies>a:hover {
+.studies > a:hover {
     letter-spacing: 1px;
 }
 
@@ -586,14 +581,14 @@ nav {
     animation: fadeInUp 0.7s ease both;
 }
 
-.process-header h2 {
+.process-header > h2 {
     background-color: #B9FF66;
     font-size: 36px;
     font-weight: 700;
     white-space: nowrap;
 }
 
-.process-header p {
+.process-header > p {
     font-size: 18px;
     font-weight: 400;
     color: #333;
@@ -683,13 +678,13 @@ nav {
     display: block;
 }
 
-.accordion-body hr {
+.accordion-body > hr {
     border: none;
     border-top: 1px solid #000;
     margin-bottom: 20px;
 }
 
-.accordion-body p {
+.accordion-body > p {
     font-size: 16px;
     font-weight: 400;
     color: #111;
@@ -707,13 +702,13 @@ nav {
     animation: fadeInUp 0.7s ease both;
 }
 
-.team>h2 {
+.team > h2 {
     margin-top: 30px;
     background-color: #B9FF66;
     font-size: 36px;
 }
 
-.team>p {
+.team > p {
     margin-left: 40px;
     margin-top: 30px;
     font-size: 18px;
@@ -767,14 +762,14 @@ nav {
     flex: 1;
 }
 
-.team-info>h3 {
+.team-info > h3 {
     font-size: 18px;
     font-weight: 700;
     color: #111;
     margin-bottom: 4px;
 }
 
-.team-info>span {
+.team-info > span {
     font-size: 14px;
     font-weight: 400;
     color: #444;
@@ -793,13 +788,13 @@ nav {
     transform: scale(1.15);
 }
 
-.team-linkedin>img {
+.team-linkedin > img {
     width: 100%;
     height: 100%;
     object-fit: contain;
 }
 
-.team-card>hr {
+.team-card > hr {
     border: none;
     border-top: 1px solid #000;
     margin: 0;
@@ -843,13 +838,13 @@ nav {
     animation: fadeInUp 0.7s ease both;
 }
 
-.testimonial>h2 {
+.testimonial > h2 {
     margin-top: 30px;
     background-color: #B9FF66;
     font-size: 36px;
 }
 
-.testimonial>p {
+.testimonial > p {
     margin-left: 40px;
     margin-top: 30px;
     font-size: 18px;
@@ -968,7 +963,7 @@ nav {
     z-index: 1;
 }
 
-.testimonial-card p {
+.testimonial-card > p {
     color: #e2e2f0;
     font-size: 15px;
     line-height: 1.75;
@@ -1047,13 +1042,13 @@ nav {
     animation: fadeInUp 0.7s ease both;
 }
 
-.contact-us>h2 {
+.contact-us > h2 {
     margin-top: 30px;
     background-color: #B9FF66;
     font-size: 36px;
 }
 
-.contact-us>p {
+.contact-us > p {
     margin-left: 40px;
     margin-top: 30px;
     font-size: 18px;
@@ -1100,7 +1095,7 @@ nav {
     cursor: pointer;
 }
 
-.radio-label>input[type="radio"] {
+.radio-label > input[type="radio"] {
     display: none;
 }
 
@@ -1116,12 +1111,12 @@ nav {
     transition: border-color 0.2s;
 }
 
-.radio-label>input[type="radio"]:checked~.radio-custom {
+.radio-label > input[type="radio"]:checked~.radio-custom {
     border-color: #B9FF66;
     background: #fff;
 }
 
-.radio-label>input[type="radio"]:checked~.radio-custom::after {
+.radio-label > input[type="radio"]:checked~.radio-custom::after {
     content: '';
     width: 12px;
     height: 12px;
@@ -1135,14 +1130,14 @@ nav {
     gap: 8px;
 }
 
-.form-group label {
+.form-group > label {
     font-size: 15px;
     font-weight: 400;
     color: #111;
 }
 
-.form-group input,
-.form-group textarea {
+.form-group > input,
+.form-group > textarea {
     width: 100%;
     padding: 16px 20px;
     border: 1.5px solid #ccc;
@@ -1155,18 +1150,18 @@ nav {
     transition: border-color 0.2s, box-shadow 0.2s;
 }
 
-.form-group input:focus,
-.form-group textarea:focus {
+.form-group > input:focus,
+.form-group > textarea:focus {
     border-color: #B9FF66;
     box-shadow: 0 0 0 3px rgba(185, 255, 102, 0.2);
 }
 
-.form-group input::placeholder,
-.form-group textarea::placeholder {
+.form-group > input::placeholder,
+.form-group > textarea::placeholder {
     color: #aaa;
 }
 
-.form-group textarea {
+.form-group > textarea {
     height: 160px;
     resize: none;
 }
@@ -1199,7 +1194,7 @@ nav {
     justify-content: right;
 }
 
-.contact-img>img {
+.contact-img > img {
     width: 100%;
     margin-right: -290px;
     max-width: unset;
@@ -1234,14 +1229,12 @@ nav {
     gap: 10px;
 }
 
-.footer-logo img {
+.footer-logo > img {
     width: 28px;
     height: 28px;
-    object-fit: contain;
-    filter: invert(1);
 }
 
-.footer-logo span {
+.footer-logo > span {
     font-size: 22px;
     font-weight: 700;
     color: #fff;
@@ -1253,7 +1246,7 @@ nav {
     gap: 30px;
 }
 
-.footer-nav a {
+.footer-nav > a {
     text-decoration: underline;
     color: #fff;
     font-size: 15px;
@@ -1262,7 +1255,7 @@ nav {
     display: inline-block;
 }
 
-.footer-nav a:hover {
+.footer-nav > a:hover {
     color: #B9FF66;
     transform: translateY(-2px);
 }
@@ -1273,14 +1266,14 @@ nav {
     gap: 14px;
 }
 
-.footer-socials a img {
+.footer-socials > a > img {
     width: 34px;
     height: 34px;
     object-fit: contain;
     transition: transform 0.2s;
 }
 
-.footer-socials a:hover img {
+.footer-socials > a:hover > img {
     transform: scale(1.15);
 }
 
@@ -1297,7 +1290,7 @@ nav {
     gap: 10px;
 }
 
-.footer-contact h4 {
+.footer-contact > h4 {
     background-color: #B9FF66;
     color: #111;
     font-size: 14px;
@@ -1308,7 +1301,7 @@ nav {
     margin-bottom: 6px;
 }
 
-.footer-contact p {
+.footer-contact > p {
     font-size: 15px;
     color: #ccc;
     line-height: 1.6;
@@ -1325,7 +1318,7 @@ nav {
     max-width: 500px;
 }
 
-.footer-subscribe input {
+.footer-subscribe > input {
     flex: 1;
     padding: 14px 18px;
     border: 1.5px solid #555;
@@ -1338,15 +1331,15 @@ nav {
     transition: border-color 0.2s;
 }
 
-.footer-subscribe input::placeholder {
+.footer-subscribe > input::placeholder {
     color: #888;
 }
 
-.footer-subscribe input:focus {
+.footer-subscribe > input:focus {
     border-color: #B9FF66;
 }
 
-.footer-subscribe button {
+.footer-subscribe > button {
     padding: 14px 24px;
     background: #B9FF66;
     color: #111;
@@ -1360,12 +1353,12 @@ nav {
     transition: background 0.2s, transform 0.2s;
 }
 
-.footer-subscribe button:hover {
+.footer-subscribe > button:hover {
     background: #a0e050;
     transform: scale(1.03);
 }
 
-.footer hr {
+.footer > hr {
     border: none;
     border-top: 1px solid #444;
 }
@@ -1376,19 +1369,19 @@ nav {
     gap: 30px;
 }
 
-.footer-bottom p {
+.footer-bottom > p {
     font-size: 14px;
     color: #ccc;
 }
 
-.footer-bottom a {
+.footer-bottom > a {
     font-size: 14px;
     color: #fff;
     text-decoration: underline;
     transition: color 0.2s;
 }
 
-.footer-bottom a:hover {
+.footer-bottom > a:hover {
     color: #B9FF66;
 }
 
@@ -1467,7 +1460,7 @@ nav {
         width: 40%;
     }
 
-    .contact-img>img {
+    .contact-img > img {
         margin-right: -200px;
     }
 }
@@ -1480,7 +1473,7 @@ nav {
         gap: 22px;
     }
 
-    .nav-links>li>a {
+    .nav-links > li > a {
         font-size: 15px;
     }
 
@@ -1512,7 +1505,7 @@ nav {
         font-size: 15px;
     }
 
-    .hero-image>img {
+    .hero-image > img {
         width: 90%;
         margin-left: 20px;
     }
@@ -1528,12 +1521,12 @@ nav {
         margin-left: 40px;
     }
 
-    .service>h2 {
+    .service > h2 {
         font-size: 28px;
         margin-top: 70px;
     }
 
-    .service>p {
+    .service > p {
         font-size: 16px;
         margin-top: 70px;
         margin-left: 30px;
@@ -1601,7 +1594,7 @@ nav {
         padding: 36px 32px;
     }
 
-    .contact-img>img {
+    .contact-img > img {
         margin-right: -150px;
     }
 
@@ -1667,7 +1660,7 @@ nav {
         justify-content: center;
     }
 
-    .hero-image>img {
+    .hero-image > img {
         width: 90%;
         margin-left: 0;
     }
@@ -1686,12 +1679,12 @@ nav {
         margin-right: 20px;
     }
 
-    .service>h2 {
+    .service > h2 {
         font-size: 24px;
         margin-top: 50px;
     }
 
-    .service>p {
+    .service > p {
         font-size: 14px;
         margin-left: 0;
         margin-top: 14px;
@@ -1708,7 +1701,7 @@ nav {
         height: 220px;
     }
 
-    .card>h3 {
+    .card > h3 {
         font-size: 20px;
     }
 
@@ -1724,7 +1717,7 @@ nav {
         bottom: 20px;
     }
 
-    .card>a {
+    .card > a {
         margin-left: 20px;
     }
 
@@ -1746,12 +1739,12 @@ nav {
         gap: 12px;
     }
 
-    .Case-Studies>h2 {
+    .Case-Studies > h2 {
         font-size: 26px;
         margin-top: 30px;
     }
 
-    .Case-Studies>p {
+    .Case-Studies > p {
         font-size: 15px;
         margin-left: 0;
         margin-top: 0;
@@ -1791,11 +1784,11 @@ nav {
         margin-bottom: 40px;
     }
 
-    .process-header h2 {
+    .process-header > h2 {
         font-size: 26px;
     }
 
-    .process-header p {
+    .process-header > p {
         font-size: 14px;
     }
 
@@ -1820,11 +1813,11 @@ nav {
         margin-top: 60px;
     }
 
-    .team>h2 {
+    .team > h2 {
         font-size: 26px;
     }
 
-    .team>p {
+    .team > p {
         font-size: 15px;
         margin-left: 0;
         margin-top: 0;
@@ -1847,11 +1840,11 @@ nav {
         margin-bottom: 40px;
     }
 
-    .testimonial>h2 {
+    .testimonial > h2 {
         font-size: 26px;
     }
 
-    .testimonial>p {
+    .testimonial > p {
         font-size: 15px;
         margin-left: 0;
         margin-top: 0;
@@ -1907,8 +1900,8 @@ nav {
         flex-direction: column;
     }
 
-    .footer-subscribe input,
-    .footer-subscribe button {
+    .footer-subscribe > input,
+    .footer-subscribe > button {
         width: 100%;
     }
 
@@ -1942,7 +1935,7 @@ nav {
         padding: 11px 22px;
     }
 
-    .service>h2 {
+    .service > h2 {
         font-size: 21px;
     }
 
@@ -1950,7 +1943,7 @@ nav {
         height: 200px;
     }
 
-    .card>h3 {
+    .card > h3 {
         font-size: 18px;
     }
 
@@ -1961,7 +1954,7 @@ nav {
         margin-right: 20px;
     }
 
-    .card>a {
+    .card > a {
         position: absolute;
         top: 90px;
     }
@@ -2028,7 +2021,7 @@ nav {
         margin-right: 14px;
     }
 
-    .service>h2 {
+    .service > h2 {
         font-size: 18px;
     }
 
@@ -2041,7 +2034,7 @@ nav {
         height: 190px;
     }
 
-    .card>h3 {
+    .card > h3 {
         font-size: 16px;
     }
 
@@ -2050,7 +2043,7 @@ nav {
         height: 80px;
     }
 
-    .card>a {
+    .card > a {
         position: absolute;
         top: 75px;
     }
@@ -2218,7 +2211,7 @@ nav {
         padding: 20px 16px;
     }
 
-    .testimonial-card p {
+    .testimonial-card > p {
         font-size: 13px;
     }
 
@@ -2248,7 +2241,7 @@ nav {
         padding: 16px 12px;
     }
 
-    .testimonial-card p {
+    .testimonial-card > p {
         font-size: 12px;
         line-height: 1.6;
     }
