@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+:root {
+    --first-font: 'Inter', sans-serif;
+    --second-font: 'Sans Bold', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #000;
+    color: #fff;
+    min-height: 100vh;
+}
+
+header {
+    width: 100%;
+}
+
+.navbar {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.nav-section {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.nav-left {
+    flex: 1;
+}
+
+.nav-center {
+    justify-content: center;
+    flex: 0 0 auto;
+}
+
+.nav-right {
+    justify-content: flex-end;
+    flex: 1;
+}
+
+.nav-explore {
+    color: #fff;
+    font-size: 24px;
+    font-weight: 700;
+    text-decoration: none;
+    letter-spacing: -0.02em;
+}
+
+.nav-search {
+    width: 220px;
+    min-width: 160px;
+    padding: 10px 16px;
+    border: 1px solid #fff;
+    background-color: rgba(255, 255, 255, 0.04);
+    color: #fff;
+    font-size: 15px;
+}
+
+.nav-search::placeholder {
+    color: #999;
+    opacity: 1;
+}
+
+.nav-search:focus {
+    outline: none;
+    border: 4px solid #0095ff;
+}
+
+.nav-logo {
+    width: 72px;
+    height: auto;
+    display: block;
+}
+
+.nav-item {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    transition: color 0.2s ease;
+}
+
+.nav-item:hover {
+    color: #8ea4ff;
+}
+
+.nav-has-arrow {
+    position: relative;
+    padding-right: 18px;
+}
+
+.nav-has-arrow::after {
+    content: '▾';
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 12px;
+    color: #fff;
+}
+
+.nav-btn {
+    border: 1px solid #eb2a2a;
+    background-color: transparent;
+    color: #fff;
+    padding: 8px 16px;
+    border-radius: 999px;
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.nav-btn:hover {
+    background-color: #ff3b3b;
+    transform: translateY(-1px);
+}
+
+@media (max-width: 900px) {
+    .navbar {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .nav-left,
+    .nav-right {
+        flex: 100%;
+        justify-content: center;
+    }
+
+    .nav-left {
+        order: 1;
+    }
+
+    .nav-center {
+        order: 0;
+        width: 100%;
+        justify-content: center;
+        margin-bottom: 18px;
+    }
+
+    .nav-right {
+        order: 2;
+        gap: 16px;
+        flex-wrap: wrap;
+    }
+}
