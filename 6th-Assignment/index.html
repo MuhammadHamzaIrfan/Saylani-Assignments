@@ -28,7 +28,7 @@
     </div>
 
     <!-- Right section -->
-    <ul class="nav-links">
+    <ul class="nav-links" id="navLinks">
       <li><a href="#">News & Events </a></li>
       <li><a href="#">Multimedia </a></li>
       <li class="live">
@@ -36,6 +36,13 @@
         <button class="live-badge">LIVE</button>
       </li>
     </ul>
+
+    <!-- Hamburger Menu Button -->
+    <div class="hamburger" id="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
 
   </div>
 </nav>
@@ -568,6 +575,24 @@
     </div>
   </div>
 </footer>
+
+<script>
+  const hamburger = document.getElementById('hamburger');
+  const navLinks = document.getElementById('navLinks');
+
+  hamburger.addEventListener('click', () => {
+    navLinks.classList.toggle('active');
+    hamburger.classList.toggle('active');
+  });
+
+  // Close menu when clicking a link
+  document.querySelectorAll('.nav-links a').forEach(link => {
+    link.addEventListener('click', () => {
+      navLinks.classList.remove('active');
+      hamburger.classList.remove('active');
+    });
+  });
+</script>
 
 </body>
 </html>
